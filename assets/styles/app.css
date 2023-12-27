@@ -543,5 +543,28 @@ span.nav-name {
     display: none;
 }
 
+span#toggleLabel2.control-label2 {
+    text-align: center;
+}
+
+/* Style pour l'icône de recherche dans le menu burger */
+.navbar2 .nav-item2 .nav-link.d-flex2 {
+    color: #fff; /* Couleur de l'icône */
+    font-size: 25px;
+    padding-left: 28px ;    
+}
+
+.nav-item2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navbar2 .nav-item2 .nav-link.d-flex2:hover {
+    color: #f9bc14; /* Couleur au survol */
+}
+
+
+
+
 
 
