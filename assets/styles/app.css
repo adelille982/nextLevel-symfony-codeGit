@@ -1,0 +1,525 @@
+/*=========================
+  CSS Général
+=========================*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*=========================
+  CSS pour la Navbar
+=========================*/
+
+.navbar {
+    background-color: #303030;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    overflow: auto;
+    /*display: none;*/
+}
+
+.navbar .menu-ul {
+    margin-top: 17px;
+    list-style-type: none;
+}
+
+.navbar .menu-ul li {
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 7px;
+    color: #000;
+    text-align: left;
+    padding-left: 27px;
+}
+
+.navbar .menu-ul li i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Style par défaut pour les liens et les icônes */
+.navbar .menu-ul li a,
+.navbar .menu-ul li i {
+    color: white; /* Couleur blanche par défaut */
+    text-decoration: none;
+}
+
+/* Style pour le survol des liens et des icônes */
+.navbar .menu-ul li:hover a,
+.navbar .menu-ul li:hover i {
+    color: #f9bc14; /* Couleur jaune au survol */
+}
+
+/* Style spécifique pour le lien 'Tips' */
+.tips-button .nav-link,
+.tips-button .bi {
+    color: gray; /* Couleur du texte en état normal pour 'Tips' */
+}
+
+/* Style spécifique au survol pour le lien 'Tips' */
+.tips-grey .tips-button:hover a,
+.tips-grey .tips-button:hover i {
+    color: gray; /* Couleur grise au survol */
+}
+
+/*=========================
+  CSS Spécifique pour 'Tips'
+=========================*/
+
+.tips-button {
+    background-color: #f9bc14; /* Couleur de fond pour 'Tips' */
+}
+
+.tips-button .nav-link,
+.tips-button .bi {
+    color: gray!important; /* Couleur du texte en état normal pour 'Tips' */
+}
+
+.tips-button:hover {
+    background-color: #f9bc14; /* Couleur de fond au survol pour 'Tips' */
+}
+.bg-warning {
+    background-color: #f9bc14!important; /* Fond jaune */
+}
+
+.text-dark {
+    color: grey!important; /* Texte noir */
+}
+
+.nav_link {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    column-gap: 0.875rem; /* Espacement entre l'icône et le texte */
+    padding: 0.75rem 1.5rem; /* Padding autour du lien */
+    transition: .3s; /* Transition pour le survol */
+    width: 100%; /* Largeur complète pour aligner avec les autres éléments de la liste */
+    color: #fff!important; /* Couleur du texte par défaut */
+}
+
+.nav_icon {
+    font-size: 1.25rem; /* Taille de l'icône */
+    margin-right: 0.5rem!important; /* Espacement à droite de l'icône */
+}
+
+/*=========================
+  CSS pour le Logo
+=========================*/
+
+.logo {
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 3px;
+    width: 270px;
+}
+
+.logo img {
+    width: 80%;
+    height: auto;
+}
+
+/*=========================
+  CSS pour le Switch
+=========================*/
+
+.bouton-dina {
+    margin-left: 60px;
+    margin-bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 43px;
+    height: 25px;
+}
+
+.switch .control-label {
+    margin-left: 50px;
+    color: white;
+    display: inline-block;
+}
+
+.switch span {
+    color: white;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.check {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+.check:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+}
+
+input:checked+.check {
+    background-color: #ffcc00;
+}
+
+input:focus+.check {
+    box-shadow: 0 0 1px #ffcc00;
+}
+
+input:checked+.check:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(15px);
+}
+
+/*=========================
+  CSS pour la Navbar Horizontale
+=========================*/
+
+.navbar-horizontal {
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 250px;
+    top: 0;
+    right: 0;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.horizontal-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.menu-ul-horizontal,
+.horizontal-menu2 ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.menu-ul-horizontal li,
+.horizontal-menu2 ul li {
+    margin-right: 20px;
+}
+
+.horizontal-menu2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+/*=========================
+  CSS pour les Dropdowns et Inputs
+=========================*/
+
+.dropdown-input {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-input .bi {
+    margin-right: 10px;
+}
+
+.dropdown {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    width: 200px;
+    padding: 5px 10px;
+}
+
+.dropdown-with-icon {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: white;
+    padding: 8px;
+    margin-right: 35px;
+}
+
+.dropdown-with-icon .bi {
+    margin-right: 15px;
+    color: #666;
+}
+
+.nav-link-horizontal {
+    text-decoration: none;
+    color: #000;
+}
+
+/*=========================
+  CSS pour les Icônes
+=========================*/
+
+.bi-currency-euro,
+.bi-bell,
+.bi-person {
+    font-size: 25px;
+}
+
+.bi-person {
+    font-size: 27px;
+}
+
+/*=========================
+  CSS pour les Éléments Réactifs
+=========================*/
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .navbar .menu-ul li:hover {
+        background-color: #ccc;
+    }
+}
+
+/*=========================
+  CSS pour les Boutons Spécifiques
+=========================*/
+
+.button-style-index,
+.button-style-besoin-client,
+.button-style-tableau-bord,
+.button-style-sites,
+.button-style-commandes,
+.button-style-alertes,
+.button-style-tips,
+.button-style-favoris,
+.button-style-projets,
+.button-style-precommandes,
+.button-style-accompagnements,
+#acheterCredits.button-style-index2 {
+    /* Styles communs à tous les boutons */
+    background-color: #F0C300;
+    color: #303030;
+    padding: 5px 15px;
+    border-radius: 30px;
+    display: inline-block;
+    margin: 5px;
+    cursor: default;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/* Styles spécifiques pour chaque bouton */
+.button-style-sites { width: 170px; }
+.button-style-commandes { width: 250px; }
+.button-style-alertes { width: 130px; }
+.button-style-tips { width: 100px; }
+.button-style-favoris { width: 130px; }
+.button-style-projets { width: 130px; }
+.button-style-precommandes { width: 220px; }
+.button-style-accompagnements { width: 250px; }
+
+#acheterCredits.button-style-index2 {
+    background-color: #303030;
+    width: 250px;
+    margin-left: -15px;
+    margin-right: 30px;
+}
+
+#acheterCredits.button-style-index2 a {
+    color: #F0C300;
+    font-size: 19px;
+    text-decoration: none;
+}
+
+/*=========================
+  CSS pour les Éléments du Menu Déroulant
+=========================*/
+
+.nav-item {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+a.nav-link.d-flex {
+    text-decoration: none;
+    color: white;
+}
+
+span.nav-name {
+    margin-left: 6px;
+    font-size: 16px;
+}
+
+.nav-link {
+    cursor: pointer;
+}
+
+.nav-item .nav-link,
+.nav-item .nav-icon,
+.nav-item .collapse-icon {
+    color: white;
+}
+
+.nav-item:hover .nav-link,
+.nav-item:hover .nav-icon,
+.nav-item:hover .collapse-icon {
+    color: #f9bc14;
+}
+
+.collapse .sidebar__sublink {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: -10px;
+    display: block;
+}
+
+.collapse .sidebar__sublink:hover {
+    color: #f9bc14;
+}
+
+.collapse-icon-open {
+    transform: rotate(180deg);
+    transition: transform 0.3s;
+}
+
+.collapse {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.collapse-open {
+    max-height: 500px;
+}
+
+/*=========================
+  CSS pour la Navbar Burger
+=========================*/
+
+.navbar2 {
+    background-color: #303030;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+
+.navbar2 .logo2 {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.navbar2 .logo2 img {
+    width: 100%;
+    height: auto;
+}
+
+.navbar2 .bouton-dina2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.navbar2 .bouton-dina2 .switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    width: 43px;
+    height: 25px;
+}
+
+.navbar2 .bouton-dina2 .switch .control-label2 {
+    margin-left: 1px;
+    color: white;
+    display: inline-block;
+}
+
+.navbar2 .menu2 {
+    margin-top: 17px;
+}
+
+.navbar2 .menu2 .menu-ul,
+.navbar2 .menu2 .menu-ul2 {
+    list-style-type: none;
+}
+
+.navbar2 .menu2 .menu-ul li,
+.navbar2 .menu2 .menu-ul2 li {
+    padding: 10px;
+    margin-bottom: 7px;
+    text-align: left;
+    padding-left: 28px;
+    font-size: 25px;
+}
+
+.navbar2 .menu2 .menu-ul li a,
+.navbar2 .menu2 .menu-ul2 li a {
+    color: white; /* Couleur blanche par défaut */
+    text-decoration: none;
+}
+
+.navbar2 .menu2 .menu-ul li:hover a,
+.navbar2 .menu2 .menu-ul2 li:hover a {
+    color: #f9bc14; /* Couleur jaune au survol */
+}
+
+.navbar2 .menu2 .tips-grey .tips-button a,
+.navbar2 .menu2 .tips-grey .tips-button a:hover {
+    background-color: #f9bc14; /* Fond jaune */
+    color: grey!important; /* Texte gris */
+}
+
+.switch .control-label2 {
+    margin-top: 60px;
+    margin-left: 30px;
+    color: white;
+    display: inline-block;
+}

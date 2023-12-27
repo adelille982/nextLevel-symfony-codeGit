@@ -1,0 +1,169 @@
+                    <!-- Menu normal -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.php" class="navbar-brand">
+                <img class="logo-image" src="images/logo-transparent.png" alt="logo">
+            </a>
+        </div>
+        <div class="bouton-dina">
+            <label class="switch text-white m-0 is-rounded">
+                <input type="checkbox" id="toggleSwitch" true-value="true" value="false">
+                <span class="check is-warning"></span>
+                <span class="control-label" id="toggleLabel">Client</span>
+            </label>
+        </div>
+
+        <hr>
+
+        <div class="menu" id="menu2">
+            <ul class="menu-ul">
+                <li><i class="bi bi-speedometer2"></i><a href="tableau-de-bord.php" class="nav-link">Tableau de bord</a></li>
+                <li><i class="bi bi-diagram-3-fill"></i><a href="sites.php" class="nav-link">Sites</a></li>
+                <li><i class="bi bi-cart3"></i><a href="commandes.php" class="nav-link">Commandes</a></li>
+                <li><i class="bi bi-pencil-fill"></i><a href="besoins-des-clients.php" class="nav-link">Besoin des clients</a></li>
+                <li><i class="bi bi-clock-fill"></i><a href="alertes.php" class="nav-link">Alertes</a></li>
+                <div class="tips-grey">
+                <li class="tips-button"><i class="bi bi-lightbulb-fill"></i><a href="tips.php" class="nav-link text-dark bg-warning">Tips</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="menu" id="menu1" style="display: none;">
+            <ul class="menu-ul">
+                <li><i class="bi bi-speedometer2"></i><a href="tableau-de-bord.php" class="nav-link">Tableau de bord</a></li>
+                <div class="nav-item">
+                    <a href="#" class="nav-link d-flex">
+                        <i class="nav-icon fas fa-search"></i>
+                        <span class="nav-name">Rechercher</span>
+                        <i class="fas fa-caret-down collapse-icon"></i>
+                    </a>
+                    <div class="collapse">
+                        <a href="#" class="sidebar__sublink">Par mot-clé</a>
+                        <a href="#" class="sidebar__sublink">Par domaine</a>
+                        <a href="#" class="sidebar__sublink">Par page</a>
+                        <a href="#" class="sidebar__sublink">Par thématique</a>
+                    </div>
+                </div>
+
+                <li><i class="bi bi-star"></i><a href="favoris.php" class="nav-link">Favoris</a></li>
+                <li><i class="bi bi-clock"></i><a href="alertes.php" class="nav-link">Alertes</a></li>
+                <li><i class="far fa-folder nav_icon"></i><a href="projets.php" class="nav-link">Projets</a></li>
+                <li><i class="fas fa-file-signature nav_icon"></i><a href="precommandes.php" class="nav-link">Précommandes</a></li>
+                <li><i class="fas fa-life-ring nav_icon"></i><a href="accompagnements.php" class="nav-link">Accompagnements</a></li>
+            </ul>
+        </div>
+    </nav>
+
+            <!-- Menu burger 
+            <nav class="navbar2">
+        <div class="logo2">
+            <a href="index.php" class="navbar-brand2">
+                <img class="logo-image" src="images/logo-menu-burger-transparent.png" alt="logo">
+            </a>
+        </div>
+        <div class="bouton-dina2">
+            <label class="switch text-white m-0 is-rounded">
+                <input type="checkbox" id="toggleSwitch" true-value="true" value="false">
+                <span class="check is-warning2"></span>
+                <span class="control-label2" id="toggleLabel2">Client</span>
+            </label>
+        </div>
+        
+        <br>
+        <br>
+        <hr>
+
+        <div class="menu2" id="menu3">
+            <ul class="menu-ul">
+                <li><a href="tableau-de-bord.php" class="nav-link"><i class="bi bi-speedometer2"></i></a></li>
+                <li><a href="sites.php" class="nav-link"><i class="bi bi-diagram-3-fill"></i></a></li>
+                <li><a href="commandes.php" class="nav-link"><i class="bi bi-cart3"></i></a></li>
+                <li><a href="besoins-des-clients.php" class="nav-link"><i class="bi bi-pencil-fill"></i></a></li>
+                <li><a href="alertes.php" class="nav-link"><i class="bi bi-clock-fill"></i></a></li>
+                <div class="tips-grey">
+                <li class="tips-button"><a href="tips.php" class="nav-link text-dark bg-warning"><i class="bi bi-lightbulb-fill"></i></a></li>
+                </div>
+            </ul>
+        </div>
+
+        <div class="menu2" id="menu3" style="display: none;">
+            <ul class="menu-ul2">
+                <li><a href="tableau-de-bord.php" class="nav-link2"><i class="bi bi-speedometer2"></i></a></li>
+                <div class="nav-item2">
+                    <a href="#" class="nav-link d-flex2">
+                        <i class="nav-icon fas fa-search"></i>
+                    </a>
+                </div>
+
+                <li><a href="favoris.php" class="nav-link2"><i class="bi bi-star"></i></a></li>
+                <li><a href="alertes.php" class="nav-link2"><i class="bi bi-clock"></i></a></li>
+                <li><a href="projets.php" class="nav-link2"><i class="far fa-folder nav_icon"></i></a></li>
+                <li><a href="precommandes.php" class="nav-link2"><i class="fas fa-file-signature nav_icon"></i></a></li>
+                <li><a href="accompagnements.php" class="nav-link2"><i class="fas fa-life-ring nav_icon"></i></a></li>
+            </ul>
+        </div>
+    </nav>-->    
+    <!-- Menu horizontal -->
+    <nav class="navbar-horizontal">
+        <div class="horizontal-menu">
+            <ul class="menu-ul-horizontal">
+                <li id="currentPageDisplay" class="button-style-index"><strong>Accueil</strong></li>
+            </ul>
+<div class="horizontal-menu2">
+    <div class="dropdown-input">
+        <div class="dropdown-with-icon">
+            <i class="bi bi-diagram-3-fill"></i>
+            <select id="myDropdown" class="dropdown" placeholder="sites">
+                <!-- Les options seront ajoutées ici -->
+            </select>
+        </div>
+        <ul class="menu-ul-horizontal">
+            <li id="acheterCredits" class="button-style-index2">
+                <a href="acheter-des-crédits.php"> <!-- Ajoutez l'URL de destination ici -->
+                    <i class="bi bi-cart-plus"></i>
+                    <strong>Acheter des crédits</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <ul>
+        <li class="nav-link-horizontal2"><strong>Gains</strong><br><strong>00.00</strong><i class="bi bi-currency-euro"></i>
+        </li>
+        <li><a href="#" class="nav-link-horizontal"><i class="bi bi-bell"></i></a></li>
+        <li><a href="#" class="nav-link-horizontal"><i class="bi bi-person"></i></a></li>
+    </ul>
+</div>
+</div>
+</nav>
+
+<!-- Menu Horizontal Burger 
+<nav class="navbar-horizontal2">
+    <div class="horizontal-menu2">
+        <ul class="menu-ul-horizontal2">
+        </ul>
+        <div class="horizontal-menu2">
+            <div class="dropdown-input">
+                <div class="dropdown-with-icon">
+                    <i class="bi bi-diagram-3-fill"></i>
+                    <select id="myDropdown" class="dropdown2" placeholder="sites"> -->
+                        <!-- Les options seront ajoutées ici
+                    </select>
+                </div>
+                <ul class="menu-ul-horizontal2">
+                    <li id="acheterCredits" class="button-style-index">
+                        <a href="acheter-des-crédits.php"> --> <!-- Ajoutez l'URL de destination ici 
+                            <i class="bi bi-cart-plus"></i>
+                            <strong>Acheter des crédits</strong>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li class="nav-link-horizontal2"><strong>Gains</strong><br><strong>00.00</strong><i class="bi bi-currency-euro"></i>
+                </li>
+                <li><a href="#" class="nav-link-horizontal"><i class="bi bi-bell"></i></a></li>
+                <li><a href="#" class="nav-link-horizontal"><i class="bi bi-person"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</nav> -->
