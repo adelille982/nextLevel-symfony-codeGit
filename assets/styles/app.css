@@ -25,7 +25,6 @@ body {
     width: 250px;
     height: 100%;
     overflow: auto;
-    /*display: none;*/
 }
 
 .navbar .menu-ul {
@@ -446,10 +445,9 @@ span.nav-name {
     position: fixed;
     left: 0;
     top: 0;
-    width: 80px;
+    width: 90px;
     height: 100%;
     overflow: auto;
-    display: none;
 }
 
 .navbar2 .logo2 {
@@ -523,3 +521,27 @@ span.nav-name {
     color: white;
     display: inline-block;
 }
+
+.hamburger-icon {
+    display: none; /* Masquer initialement l'icône du menu burger */
+    z-index: 1000;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.close-icon {
+    font-size: 22px; /* Taille de l'icône */
+    cursor: pointer; /* Curseur pointeur */
+    position: absolute;
+    right: 15px;
+    top: 28px;
+    color: white;
+    display: block;
+}
+
+.hidden-initially {
+    display: none;
+}
+
+
+

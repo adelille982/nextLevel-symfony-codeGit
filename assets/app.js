@@ -53,3 +53,49 @@ document.addEventListener('DOMContentLoaded', function () {
         collapseIcon.classList.toggle('collapse-icon-open', !isCollapsed);
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var hamburgerIcon = document.querySelector('.hamburger-icon');
+    var closeIcon = document.querySelector('.close-icon');
+    var navbar = document.querySelector('.navbar');
+    var navbar2 = document.querySelector('.navbar2');
+    var navbarHorizontal = document.querySelector('.navbar-horizontal');
+
+    // Fonction pour basculer les menus
+    function toggleMenus() {
+        if (navbar.style.display === 'none' || navbar.style.display === '') {
+            navbar.style.display = 'block';
+            navbar2.style.display = 'none';
+            closeIcon.style.display = 'block';
+            hamburgerIcon.style.display = 'none'; // Masquer l'icône du menu burger
+        } else {
+            navbar.style.display = 'none';
+            navbar2.style.display = 'block';
+            closeIcon.style.display = 'none';
+            hamburgerIcon.style.display = 'block'; // Afficher l'icône du menu burger
+        }
+        adjustHorizontalMenu();
+    }
+
+    // Fonction pour ajuster la position du menu horizontal
+    function adjustHorizontalMenu() {
+        navbarHorizontal.style.left = navbar2.style.display === 'block' ? '90px' : '250px';
+    }
+
+    // Initialisation des états des menus
+    navbar.style.display = 'block';
+    navbar2.style.display = 'none';
+    closeIcon.style.display = 'block'; // Afficher seulement la croix initialement
+    hamburgerIcon.style.display = 'none'; // Masquer l'icône du menu burger initialement
+    adjustHorizontalMenu();
+
+    // Écouteurs d'événements pour les icônes
+    hamburgerIcon.addEventListener('click', toggleMenus);
+    closeIcon.addEventListener('click', toggleMenus);
+
+    // Ajuster lors du redimensionnement de la fenêtre
+    window.onresize = adjustHorizontalMenu;
+});
+
+
